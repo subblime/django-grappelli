@@ -5,15 +5,15 @@
 
 // grp jQuery namespace
 var grp = {
-    "jQuery": jQuery.noConflict(true)
+    "jQuery": jQuery.noConflict(false)
 };
 
 // django jQuery namespace
 var django = {
-    "jQuery": grp.jQuery.noConflict(true)
+    "jQuery": grp.jQuery.noConflict(false)
 };
 
-// var jQuery = grp.jQuery.noConflict(true);
+// var jQuery = grp.jQuery.noConflict(false);
 
 (function($) {
     
